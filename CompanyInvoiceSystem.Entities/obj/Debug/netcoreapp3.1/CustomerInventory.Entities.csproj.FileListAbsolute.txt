@@ -1,0 +1,8 @@
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\bin\Debug\netcoreapp3.1\CustomerInventory.Entities.deps.json
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\bin\Debug\netcoreapp3.1\CustomerInventory.Entities.dll
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\bin\Debug\netcoreapp3.1\CustomerInventory.Entities.pdb
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\obj\Debug\netcoreapp3.1\CustomerInventory.Entities.AssemblyInfoInputs.cache
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\obj\Debug\netcoreapp3.1\CustomerInventory.Entities.AssemblyInfo.cs
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\obj\Debug\netcoreapp3.1\CustomerInventory.Entities.dll
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\obj\Debug\netcoreapp3.1\CustomerInventory.Entities.pdb
+C:\Users\e_itk\source\repos\CustomerInventory\CustomerInventory.Entities\obj\Debug\netcoreapp3.1\CustomerInventory.Entities.csproj.CoreCompileInputs.cache

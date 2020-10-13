@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Content Remove="Entities\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <None Remove="Entities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\IndexController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Migrations\20201009023730_InitialMigration.cs" />
+    <Compile Remove="Migrations\20201009023730_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20201009033548_InitialMigration.cs" />
+    <Compile Remove="Migrations\20201009033548_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20201009035555_InitialDataSeed.cs" />
+    <Compile Remove="Migrations\20201009035555_InitialDataSeed.Designer.cs" />
+    <Compile Remove="Migrations\20201010045550_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010045550_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010052215_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010052215_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010053630_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010053630_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010053911_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010053911_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010054611_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010054611_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010055833_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010055833_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010080021_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010080021_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010085828_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010085828_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010212649_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010212649_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010213414_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010213414_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010222342_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010222342_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010230851_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010230851_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010231010_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010231010_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201010231242_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201010231242_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011012151_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201011012151_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011014024_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201011014024_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011023327_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201011023327_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011025303_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201011025303_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011025816_InvoicesTablesAndRelationship.cs" />
+    <Compile Remove="Migrations\20201011025816_InvoicesTablesAndRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20201011040435_InvoicesTablesAndRelationshipAndSeed.cs" />
+    <Compile Remove="Migrations\20201011040435_InvoicesTablesAndRelationshipAndSeed.Designer.cs" />
+    <Compile Remove="Migrations\20201011041419_InvoicesTablesAndRelationshipAndSeed.cs" />
+    <Compile Remove="Migrations\20201011041419_InvoicesTablesAndRelationshipAndSeed.Designer.cs" />
+    <Compile Remove="Migrations\20201011041824_InvoicesTablesAndRelationshipAndSeed.cs" />
+    <Compile Remove="Migrations\20201011041824_InvoicesTablesAndRelationshipAndSeed.Designer.cs" />
+    <Compile Remove="Migrations\20201013065003_AddCompanyAddressAndPhoneData.cs" />
+    <Compile Remove="Migrations\20201013065003_AddCompanyAddressAndPhoneData.Designer.cs" />
+    <Compile Remove="Migrations\20201013065401_AddCompanyAddressAndPhoneData.cs" />
+    <Compile Remove="Migrations\20201013065401_AddCompanyAddressAndPhoneData.Designer.cs" />
+    <Compile Remove="Utils\BaseApiController.cs" />
+    <Compile Remove="Utils\EntityUtils.cs" />
+    <Compile Remove="Utils\RestServiceUtils.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyInvoiceSystem.Common\CompanyInvoiceSystem.Common.csproj" />
+    <ProjectReference Include="..\CompanyInvoiceSystem.Entities\CompanyInvoiceSystem.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+
+</Project>

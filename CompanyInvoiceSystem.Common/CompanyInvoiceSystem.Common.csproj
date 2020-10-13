@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\DataContracts\ApiExceptionDetails.cs" />
+    <Compile Remove="Models\DataContracts\ApiResponse.cs" />
+    <Compile Remove="Models\DataContracts\ErrorCode.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyInvoiceSystem.Entities\CompanyInvoiceSystem.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
