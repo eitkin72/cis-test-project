@@ -34,7 +34,7 @@ namespace CompanyInvoiceSystem.WebApi.Controllers
             => Ok(_companyManager.UpdateCompany(request));
 
 
-        [HttpPut(ApiRoutes.Company.CreateCompany)]
+        [HttpPost(ApiRoutes.Company.CreateCompany)]
         public ActionResult<CompanyServiceResponse> CreateCompany([FromBody] CompanyCreateServiceRequest request)
             => Ok(_companyManager.CreateCompany(request));
 

@@ -10,3 +10,15 @@ C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Common\obj
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.dll
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.pdb
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.csproj.CopyComplete
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.deps.json
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.dll
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.pdb
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.dll
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.pdb
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.csprojAssemblyReference.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.AssemblyInfoInputs.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.AssemblyInfo.cs
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.csproj.CoreCompileInputs.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.csproj.CopyComplete
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.dll
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Common\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Common.pdb
