@@ -27,7 +27,9 @@
             <table class="table table-bordered table-responsive-sm">
             <thead>
                 <tr>
-                <th scope="col">#</th>
+                <th scope="col">
+                    <a class="btn btn-outline-secondary" v-on:click="goToAddEditCompanyPage(defaultGuid)">Create Company</a>
+                </th>
                 <th scope="col" class="col-xs-1">Company Name</th>
                 <th scope="col" class="col-xs-1">EIN</th>
                 <th scope="col" class="col-xs-1">Domestic</th>
@@ -72,7 +74,8 @@ import axios from 'axios'
 export default {
     name: 'companies',
     mounted() {
-        axios({
+        axios(
+            {
             method: "GET",                        
             //"url": "assets/samplejson/customerlist.json"
             "url": "https://localhost:44389/api/company/getcompanies"
@@ -86,13 +89,14 @@ export default {
     data() {
         return {
             companylist: [],
-            selectedCompany: ""
+            selectedCompany: "",
+            defaultGuid : "00000000-0000-0000-0000-000000000000",            
         }
     },
     components: {
         Display
     },
-    methods: {
+    methods: {        
         setSelectedCompany: function(c) {  
             var details1 = [                   
                     { name : c.name }, 

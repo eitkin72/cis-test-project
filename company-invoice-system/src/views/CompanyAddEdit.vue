@@ -17,7 +17,7 @@
 <div class="home">
      <div class="card" v-if="companyDetails.id">
         <div class="card-header">
-            Add/Edit Company Details
+            {{getPageTitle()}}          
         </div>
 
         <form id="add-edit-form" @submit.prevent="processForm">
@@ -129,6 +129,7 @@ export default {
             "url": "https://localhost:44389/api/company/getcompany?id="+this.$route.params.id
         }).then(response => {
             this.companyDetails = response.data;
+            console.log(this.companyDetails);
         }, error => {
             console.error(error);
         }); 
@@ -144,16 +145,16 @@ export default {
     },
     data() { 
         return {
-            companyDetails: {},   
-            //companyInvoices: {},                             
+            companyDetails: {},               
+            //companyInvoices: {},             
         }
     },
     methods: {
         goToMainPage: function() {
             this.$router.push("/companies");
-        },
-        processForm: function() {
-            const defaultGuid = "00000000-0000-0000-0000-000000000000";
+        },     
+        processForm: function() {   
+            const defaultGuid = "00000000-0000-0000-0000-000000000000" ;            
             const methodName = this.companyDetails.id === defaultGuid ? "POST" : "PUT";
             const hostUrl = 
                 this.companyDetails.id === defaultGuid 
@@ -169,6 +170,11 @@ export default {
             }).catch(error =>{
                 console.log(error);
             });
+        },
+        getPageTitle: function() {
+            return this.$route.params.id ===  "00000000-0000-0000-0000-000000000000" 
+                    ? "Add New Company Details" 
+                    : "Edit Company Details"        
         },
         moment
     }
