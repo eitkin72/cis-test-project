@@ -22,6 +22,7 @@
             <h2 class="card-title">{{companyDetails.name}}</h2>
             <!-- <p class="card-text">Company Name : {{companyDetails.name}}</p> -->
             <p class="card-text">EIN : {{companyDetails.ein}}</p>
+            <p class="card-text">Is Domestic : {{  getLookupValue('YesNo', (companyDetails.isDomestic ? 1 : 0)) }}</p>
             <p class="card-text">{{companyDetails.addressStreet !== null ? companyDetails.addressStreet  + ' ' + companyDetails.addressUnitNumber : null}}</p>
             <p class="card-text">{{companyDetails.city != null ? companyDetails.city + ', ' + companyDetails.state + ' ' + companyDetails.zipCode : null }}</p>
             <p class="card-text">{{companyDetails.phoneNumber}}</p>
@@ -43,15 +44,17 @@
                         <a class="btn btn-outline-secondary" v-on:click="goToDetailsPage(invoice.id)">Details</a>
                     </th>
                     <td class="col-xs-2">{{ moment(String(invoice.invoiceDate)).format('MM/DD/YYYY') }}</td>
-                    <td class="col-xs-2">{{invoice.invoiceType}}</td>
+                    <td class="col-xs-2">{{ getLookupValue('InvoiceType', invoice.invoiceType) }} </td>
                     <td class="col-xs-2">{{invoice.totalValue}}</td>
                     </tr>            
                 </tbody>
                 </table>
-
             </div>
 
             <a v-on:click="goToMainPage()" class="btn btn-primary"><span style="color:white">Go Back</span></a>
+
+
+
         </div>
     </div>
 
@@ -69,11 +72,26 @@ export default {
     name: 'companydetails',
     mounted() 
     {
+
+        axios({
+            method: "POST",
+            "url": "https://localhost:44389/api/lookupvalue/GetLookupValues",
+            data : {
+                "EnumTypes": ["InvoiceType", "YesNo"]
+            }
+        }).then(response => {
+            this.lookupValues = response.data.lookupValues;
+        }, error => {
+            console.error(error);
+        }); 
+
         axios({
             method: "GET",
             "url": "https://localhost:44389/api/company/getcompany?id="+this.$route.params.id
         }).then(response => {
+            console.log(response.data);
             this.companyDetails = response.data;
+            console.log(this.companyDetails);
         }, error => {
             console.error(error);
         }); 
@@ -86,16 +104,25 @@ export default {
         }, error => {
             console.error(error);
         }); 
+        
     },
     data() {        
         return {
+            lookupValues : {},
             companyDetails: {},   
-            companyInvoices: {},                 
+            companyInvoices: {},                             
         }
     },
     methods: {
-        goToMainPage: function() {
+        goToMainPage : function() {
             this.$router.push("/companies");
+        },        
+        // getInvoiceTypeValue : function(key) {            
+        //     return this.lookupValues['InvoiceType'][key];
+        // },
+        getLookupValue : function(t, k) {
+            //console.log(this.lookupValues[t][k]);
+            return this.lookupValues[t][k];
         },
         moment
     }

@@ -98,13 +98,13 @@ export default {
     },
     methods: {        
         setSelectedCompany: function(c) {  
-            var details1 = [                   
-                    { name : c.name }, 
-                    { ein : 'EIN: ' + c.ein } ,
-                    { addressLine1 : c.addressStreet !== null ? c.addressStreet  + ' ' + c.addressUnitNumber : null },
-                    { addressLine2 : c.city != null ? c.city + ', ' + c.state + ' ' + c.zipCode : null },
-                    { phoneNumber : c.phoneNumber }
-                ];
+            // var details1 = [                   
+            //         { name : c.name }, 
+            //         { ein : 'EIN: ' + c.ein } ,
+            //         { addressLine1 : c.addressStreet !== null ? c.addressStreet  + ' ' + c.addressUnitNumber : null },
+            //         { addressLine2 : c.city != null ? c.city + ', ' + c.state + ' ' + c.zipCode : null },
+            //         { phoneNumber : c.phoneNumber }
+            //    ];
             var details = [                   
                     c.name, 
                     'EIN: ' + c.ein ,

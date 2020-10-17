@@ -24,7 +24,7 @@ namespace CompanyInvoiceSystem.WebApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<CompanyServiceResponse> Get() => Ok("Welcome to InvoiceController! ");
+        public ActionResult<string> Get() => Ok("Welcome to InvoiceController! ");
 
         [HttpGet(ApiRoutes.Invoice.GetInvoice)]        
         public ActionResult<InvoiceServiceResponse> GetInvoice(Guid id)

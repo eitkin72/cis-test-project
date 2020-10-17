@@ -34,6 +34,7 @@ namespace CompanyInvoiceSystem.WebApi
 
             services.AddScoped<ICompanyManager, CompanyManager>();
             services.AddScoped<IInvoiceManager, InvoiceManager>();
+            services.AddScoped<ILookupValueManager, LookupValueManager>();
 
             services.AddControllers()
                 .AddNewtonsoftJson(o => 

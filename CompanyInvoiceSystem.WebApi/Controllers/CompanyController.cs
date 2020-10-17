@@ -20,7 +20,7 @@ namespace CompanyInvoiceSystem.WebApi.Controllers
         }
 
         [HttpGet(ApiRoutes.Default)]
-        public ActionResult<CompanyServiceResponse> Get() => Ok("Welcome!");
+        public ActionResult<string> Get() => Ok("Welcome!");
 
         [HttpGet(ApiRoutes.Company.GetCompany)]
         public ActionResult<CompanyServiceResponse> GetCompany([FromHeader] CompanyServiceRequest request)

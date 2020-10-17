@@ -43,6 +43,16 @@
                 </div>
 
                 <div class="field">
+                    <label class="label mr-2">Is Domestic</label>                              
+                    <div class="custom-control-inline" v-for="(item, key) in lookupValues['YesNo']" :key="key">                                            
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input v-model="companyDetails.isDomestic" type="radio" class="custom-control-input" :value="key == 1 ? true : false" :id="'isDomestic_'+key" name="isDomestic" :checked="companyDetails.isDomestic == key">
+                            <label class="custom-control-label" :for="'isDomestic_'+key">{{item}}</label>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="field">
                     <label class="label mr-2">Street Address</label>
                     <input 
                         type="text"
@@ -124,6 +134,18 @@ export default {
     name: 'companydetails',    
     mounted() 
     {
+         axios({
+            method: "POST",
+            "url": "https://localhost:44389/api/lookupvalue/GetLookupValues",
+            data : {
+                "EnumTypes": ["InvoiceType", "YesNo"]
+            }
+        }).then(response => {
+            this.lookupValues = response.data.lookupValues;
+        }, error => {
+            console.error(error);
+        }); 
+
         axios({
             method: "GET",
             "url": "https://localhost:44389/api/company/getcompany?id="+this.$route.params.id
@@ -146,7 +168,8 @@ export default {
     data() { 
         return {
             companyDetails: {},               
-            //companyInvoices: {},             
+            //companyInvoices: {},   
+            lookupValues: {},          
         }
     },
     methods: {
@@ -175,6 +198,10 @@ export default {
             return this.$route.params.id ===  "00000000-0000-0000-0000-000000000000" 
                     ? "Add New Company Details" 
                     : "Edit Company Details"        
+        },
+        getLookupValue : function(t, k) {
+            //console.log(this.lookupValues[t][k]);
+            return this.lookupValues[t][k];
         },
         moment
     }

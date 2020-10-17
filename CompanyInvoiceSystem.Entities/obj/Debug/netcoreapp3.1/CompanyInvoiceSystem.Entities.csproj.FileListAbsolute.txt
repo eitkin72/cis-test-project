@@ -7,3 +7,12 @@ C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Entities\o
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.dll
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.pdb
 C:\Users\e_itk\source\repos\CompanyInvoiceSystem\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.csprojAssemblyReference.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.deps.json
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.dll
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\bin\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.pdb
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.csprojAssemblyReference.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.AssemblyInfoInputs.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.AssemblyInfo.cs
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.csproj.CoreCompileInputs.cache
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.dll
+C:\Users\e_itk\source\repos\cis-test-project\CompanyInvoiceSystem.Entities\obj\Debug\netcoreapp3.1\CompanyInvoiceSystem.Entities.pdb
